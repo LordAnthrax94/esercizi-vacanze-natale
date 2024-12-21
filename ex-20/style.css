@@ -1,0 +1,46 @@
+:root {
+  --christmas-red: #d42426;
+  --christmas-green: #165b33;
+  --snow-white: #fff;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--christmas-red);
+  color: var(--snow-white);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.countdown-container {
+  background-color: var(--christmas-green);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#countdown {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.snowflakes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: var(--snow-white);
+  font-size: 1.5em;
+  text-shadow: 0 0 5px #fff;
+  padding: 1rem;
+}
