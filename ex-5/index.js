@@ -9,3 +9,17 @@
 */
 
 const palline = ["rosso", "blu", "rosso", "verde", "rosso", "giallo", "blu"];
+
+
+function contaPallineRosse(palline){
+  let contaPalline = 0;
+  for(i = 0; i < palline.length; i++){
+    if(palline[i] === "rosso"){
+      contaPalline++;
+    }
+  }
+  return contaPalline
+}
+
+console.log(contaPallineRosse(palline));
+

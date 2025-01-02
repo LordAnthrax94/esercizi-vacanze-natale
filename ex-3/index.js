@@ -26,3 +26,9 @@ const regali = [
   { nome: "Sedia", prezzo: 15 },
   { nome: "Berretto troppo costoso", prezzo: 58 },
 ];
+
+const regaliOrdinati = regali.sort((a, b) => a.prezzo - b.prezzo);
+
+console.log(regaliOrdinati);
+
+

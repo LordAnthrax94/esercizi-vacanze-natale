@@ -26,3 +26,11 @@ const regali = [
   { nome: "Sedia", prezzo: 15 },
   { nome: "Berretto troppo costoso", prezzo: 58 },
 ];
+
+const regaliEcon = regali.filter(filtraRegaliEconomici);
+
+function filtraRegaliEconomici(regalo){
+  return regalo.prezzo < 20;
+}
+
+console.log(regaliEcon);
