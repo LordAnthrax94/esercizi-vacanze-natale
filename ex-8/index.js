@@ -32,3 +32,17 @@ const elfi = [
   { nome: "Buddy", oreLavorate: 8 },
   { nome: "SamBem", oreLavorate: 2 }
 ];
+
+
+const oreElfi = elfi.map(categorizzaElfi)
+
+function categorizzaElfi(elfo){
+  if (elfo.oreLavorate < 5){
+    elfo.carattere = "pigro";
+  } else{ 
+    elfo.carattere = "operoso"
+  };
+  return elfo;
+};
+
+console.log(oreElfi);

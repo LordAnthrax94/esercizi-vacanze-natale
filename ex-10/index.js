@@ -11,3 +11,10 @@
 */
 
 const velocitaRenne = [12, 1, 7, 10, 16, 5];
+
+function renneStanche(velocita) {
+  return velocita.map(v => v < 10); 
+}
+
+
+console.log(renneStanche(velocitaRenne));

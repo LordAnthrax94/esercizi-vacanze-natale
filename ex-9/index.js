@@ -33,3 +33,18 @@ const citta = [
   "Candynia",
   "Luciaville"
 ];
+
+const cittaVisitata = [];
+
+function visiteCitta(cittaVisitata, nuovaCitta){  
+  if(!cittaVisitata.includes(nuovaCitta)) { 
+    cittaVisitata.push(nuovaCitta); 
+  } else {
+    console.log(`${nuovaCitta} è già visitata!`); 
+  }  
+}
+
+visiteCitta(cittaVisitata, "Cicibubulandia");
+visiteCitta(cittaVisitata, "Panettoneville");
+
+console.log(cittaVisitata);

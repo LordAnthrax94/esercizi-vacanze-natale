@@ -15,3 +15,10 @@
 */
 
 const palline = ["rosso", "blu", "rosso", "verde", "rosso", "giallo", "blu"];
+
+const contaPalline = palline.reduce((cont, colore) => {
+  cont[colore] = (cont[colore] || 0) + 1;
+  return cont;
+}, {});
+
+console.log(contaPalline);
