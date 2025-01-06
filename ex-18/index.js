@@ -23,3 +23,25 @@
 */
 
 const addobbiSuAlbero = ["pallina", "pallina", "pallina", "stella"];
+
+function bilanciaAlbero(addobbiSuAlbero){
+  const numPalline = addobbiSuAlbero.filter(addobbo => addobbo === "pallina").length
+  const numStelle = addobbiSuAlbero.filter(addobbo => addobbo === "stella").length
+
+  if (numPalline > numStelle) {
+    const differenza = numPalline - numStelle;    
+    for (let i = 0; i < differenza; i++) {
+      addobbiSuAlbero.push("stella");
+    }
+  }  
+  else if (numStelle > numPalline) {
+    const differenza = numStelle - numPalline;    
+    for (let i = 0; i < differenza; i++) {
+      addobbiSuAlbero.push("pallina");
+    }
+  }
+
+  return addobbiSuAlbero;  
+}
+console.log(bilanciaAlbero(addobbiSuAlbero));
+
