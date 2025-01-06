@@ -21,3 +21,11 @@ const regali = [
   { nome: "Libretto", quantita: 12 },
   { nome: "Cicibubu Portatili", quantita: 7 }
 ];
+
+function controllaScorte(regali, minQuantita){
+  return regali.every(regalo => regalo.quantita >= minQuantita)
+}
+
+console.log(controllaScorte(regali, 5));
+console.log(controllaScorte(regali, 9));
+

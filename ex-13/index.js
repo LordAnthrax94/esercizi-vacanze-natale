@@ -52,3 +52,41 @@ const letterine = [
   "Spero in un Natale pieno di cioccolata.",
   "So che non esisti. Gne."
 ];
+
+
+
+function getLettereBambiniEducati(letterine){
+  const educati = [];
+  for(i = 0; i < letterine.length; i++){
+    if(letterine[i].startsWith("Caro Babbo Natale")){
+      educati.push(letterine[i])
+    }
+  }
+  return educati
+};
+
+function smistaLettereBambini(letterine){
+  const lettereSmistate = {
+    educati: [],
+    maleducati: []
+  };
+
+  for(i = 0; i < letterine.length; i++){
+    if(letterine[i].startsWith("Caro Babbo Natale")){
+      lettereSmistate.educati.push(letterine[i])
+    }else{
+      lettereSmistate.maleducati.push(letterine[i])
+    }
+  }
+  return lettereSmistate;
+}
+
+
+console.log(getLettereBambiniEducati(letterine));
+console.log(smistaLettereBambini(letterine));
+
+
+
+
+
+

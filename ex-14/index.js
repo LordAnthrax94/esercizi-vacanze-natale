@@ -10,3 +10,9 @@
 */
 
 const desideri = ["bicicletta", "pupazzo", "bicicletta", "cane"];
+
+function generaListaDesideri(desideri){
+  return desideri.filter((value,index, desiderio) => desiderio.indexOf(value) === index);
+}
+
+console.log(generaListaDesideri(desideri));
